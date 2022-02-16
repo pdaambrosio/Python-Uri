@@ -68,3 +68,4 @@
 * [Uri2139 - Ad-Hoc - Pedrinho's Christmas](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2139.py)
 * [Uri2140 - Ad-Hoc - Two Bills](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2140.py)
 * [Uri2143 - Unknow - The Return of Radar](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2143.py)
+* [Uri2146 - Unknow - Password](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2146.py)
