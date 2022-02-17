@@ -1,9 +1,6 @@
 def game_check(num1, num2, jump):
-        if abs(num1 - num2) > jump:
-            return True
-        else:
-            return False
-
+        return abs(num1 - num2) > jump
+        
 
 def main():
     [frog_jump, pipes] = map(int, input().split())
