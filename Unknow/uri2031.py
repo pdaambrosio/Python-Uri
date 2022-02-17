@@ -2,13 +2,11 @@ def rock_paper_airstrike(player1, player2):
     if player1 == 'ataque':
         if player2 == 'ataque':
             return 'Aniquilacao mutua'
-        else:
-            return 'Jogador 1 venceu'
+        return 'Jogador 1 venceu'
     elif player1 == 'papel':
         if player2 == 'ataque' or player2 == 'pedra':
             return 'Jogador 2 venceu'
-        else:
-            return 'Ambos venceram'
+        return 'Ambos venceram'
     elif player1 == 'pedra':
         if player2 == 'papel':
             return 'Jogador 1 venceu'
