@@ -13,8 +13,7 @@ def odd_even_cheat(choice_player1, number_j1, number_j2, cheat_player1, accuse_p
             return 'Jogador 2 ganha!'
     elif odd_even == choice_player1:
         return 'Jogador 2 ganha!'
-    else:
-        return 'Jogador 1 ganha!'
+    return 'Jogador 1 ganha!'
 
 
 def main():
