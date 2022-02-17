@@ -23,8 +23,7 @@ def main():
 
             if two_bills(n, m):
                 print('possible')
-            else:
-                print('impossible')
+            print('impossible')
         except ValueError:
             break
 
