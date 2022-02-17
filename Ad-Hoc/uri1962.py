@@ -1,8 +1,7 @@
 def ten_thousand_years(years_past):
     if years_past <= 2014:
         return f'{2015 - years_past} D.C.'
-    else:
-        return f'{years_past - 2014} A.C.'
+    return f'{years_past - 2014} A.C.'
 
 
 def main():
