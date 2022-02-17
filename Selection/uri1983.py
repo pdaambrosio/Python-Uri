@@ -11,8 +11,7 @@ def highest_score(num_students):
 
     if high_score >= 8:
         return int(registration_number)
-    else:
-        return 'Minimum note not reached'
+    return 'Minimum note not reached'
 
 
 def main():
