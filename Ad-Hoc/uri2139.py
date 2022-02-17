@@ -17,8 +17,7 @@ def days_left_until_christmas(month: str, day: str) -> str:
         return 'E vespera de natal!'
     elif days_left < 0:
         return 'Ja passou!'
-    else:
-        return f'Faltam {days_left} dias para o natal!'
+    return f'Faltam {days_left} dias para o natal!'
 
 
 def main():
