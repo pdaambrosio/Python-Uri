@@ -3,8 +3,8 @@ def two_bills(buy_price: int, price_paid: int) -> bool:
     the_change: int = price_paid - buy_price
     result: bool = False
 
-    for i in range(len(bills)):
-        for n in range(len(bills)):
+    for i, item in enumerate(bills):
+        for n, item in enumerate(bills):
             if bills[i] + bills[n] == the_change:
                 result = True
 
@@ -23,7 +23,8 @@ def main():
 
             if two_bills(n, m):
                 print('possible')
-            print('impossible')
+            else:
+                print('impossible')
         except ValueError:
             break
 
