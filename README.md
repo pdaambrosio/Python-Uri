@@ -70,3 +70,4 @@
 * [Uri2143 - Unknow - The Return of Radar](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2143.py)
 * [Uri2146 - Unknow - Password](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2146.py)
 * [Uri2152 - Unknow - Pepe, I Already Took the Candle!](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2152.py)
+* [Uri2159 - Ad-Hoc - Approximate Number of Primes](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2159.py)
