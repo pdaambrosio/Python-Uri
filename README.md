@@ -72,3 +72,4 @@
 * [Uri2152 - Unknow - Pepe, I Already Took the Candle!](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2152.py)
 * [Uri2159 - Ad-Hoc - Approximate Number of Primes](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2159.py)
 * [Uri2160 - Ad-Hoc - Name at Form](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2160.py)
+* [Uri2161 - Ad-Hoc - Square Root of 10](https://github.com/pdaambrosio/Python-Uri/blob/main/Ad-Hoc/uri2161.py)
