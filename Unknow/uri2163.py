@@ -4,8 +4,8 @@ def force_awakens(lines: int, columns: int) -> str:
     for line in range(lines):
         terrain.append([int(x) for x in input().split()])
 
-    l: int = 0
-    c: int = 0
+    line: int = 0
+    column: int = 0
 
     for i in range(1, lines - 1):
         for j in range(1, columns - 1):
@@ -13,10 +13,10 @@ def force_awakens(lines: int, columns: int) -> str:
                 if terrain[i - 1][j - 1] == 7 and terrain[i - 1][j] == 7 and terrain[i - 1][j + 1] == 7:
                     if terrain[i][j - 1] == 7 and terrain[i][j + 1] == 7:
                         if terrain[i + 1][j - 1] == 7 and terrain[i + 1][j] == 7 and terrain[i + 1][j + 1] == 7:
-                            l = i + 1
-                            c = j + 1
-                            return f'{c} {l}'
-        return f'{c} {l}'
+                            line = i + 1
+                            column = j + 1
+                            return f'{line} {column}'
+    return f'{line} {column}'
 
 
 def main() -> None:
@@ -28,6 +28,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-
-# TODO: Wrong answer (30%)
