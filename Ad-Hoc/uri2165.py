@@ -4,7 +4,7 @@ def twitting(tweet: str) -> str:
     return 'MUTE'
 
 
-def main():
+def main() -> None:
     text: str = input()
     print(twitting(text))
 
