@@ -1,9 +1,9 @@
 def fast_fibonacci(number: int) -> str:
-    from math import pow, sqrt
+    import math
 
-    n1: float = pow((1 + sqrt(5)) / 2.0, number)
-    n2: float = pow((1 - sqrt(5)) / 2.0, number)
-    result: float = (n1 - n2) / sqrt(5)
+    n1: float = math.pow((1 + math.sqrt(5)) / 2.0, number)
+    n2: float = math.pow((1 - math.sqrt(5)) / 2.0, number)
+    result: float = (n1 - n2) / math.sqrt(5)
 
     return f'{result:.1f}'
 
