@@ -12,7 +12,7 @@ def peaks_and_valleys(num: int, *args: int) -> int:
 
 def main():
     n: int = int(input())
-    h: list[int] = [int[x] for x in input().split()]
+    h: list[int] = list(map(int, input().split()))
     print(peaks_and_valleys(n, *h))
 
 
