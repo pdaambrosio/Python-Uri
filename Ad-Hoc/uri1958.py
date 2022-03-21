@@ -4,7 +4,8 @@ def scientific_notation(number):
     if Decimal(number) >= 0 and '-' != number[0]:
         print('+', end='')
 
-    print('%.4E' % Decimal(number))
+    number = Decimal(number)
+    print('%.4E' % number)
 
 
 def main():
@@ -12,4 +13,5 @@ def main():
     scientific_notation(value)
 
 
-main()
+if __name__ == '__main__':
+    main()
