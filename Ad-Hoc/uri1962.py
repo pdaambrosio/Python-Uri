@@ -6,7 +6,7 @@ def ten_thousand_years(years_past):
 
 def main():
     loop = int(input())
-    for i in range(loop):
+    for _ in range(loop):
         years = int(input())
         print(ten_thousand_years(years))
 
