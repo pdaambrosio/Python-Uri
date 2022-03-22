@@ -1,8 +1,8 @@
-def galopeira(word: str) -> float:
+def galopeira(word: str) -> str:
     return f'{0.01 * len(word):.2f}'
 
 
-def main():
+def main() -> None:
     c: int = int(input())
 
     for i in range(c):
