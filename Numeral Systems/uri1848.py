@@ -1,5 +1,5 @@
 def three_eyed_lottery():
-    for i in range(3):
+    for _ in range(3):
         sum_blink = 0
 
         while True:
