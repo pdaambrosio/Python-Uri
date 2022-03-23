@@ -1,5 +1,7 @@
 ## Uri Online Judge (beecrowd) - Python
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pdaambrosio_python_uri) &nbsp; &nbsp;[![CodeFactor](https://www.codefactor.io/repository/github/pdaambrosio/python_uri/badge)](https://www.codefactor.io/repository/github/pdaambrosio/python_uri)
+
 ### Favorites
 
 * [Uri1012 - Sequential - Area](https://github.com/pdaambrosio/Python-Uri/blob/main/Sequential/uri1012.py)
