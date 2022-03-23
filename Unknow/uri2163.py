@@ -2,17 +2,18 @@ def force_awakens(lines: int, columns: int) -> str:
     terrain: list[list[int]] = []
 
     for line in range(lines):
-        terrain.append([int(x) for x in input().split()])
+        lightsaber_pattern: list[int] = list(map(int, input().split()))
+        terrain.append(lightsaber_pattern)
 
-    for i in range(1, lines - 1):
-        for j in range(1, columns - 1):
-            if terrain[i][j] == 42:
-                if terrain[i - 1][j - 1] == 7 and terrain[i - 1][j] == 7 and terrain[i - 1][j + 1] == 7:
-                    if terrain[i][j - 1] == 7 and terrain[i][j + 1] == 7:
-                        if terrain[i + 1][j - 1] == 7 and terrain[i + 1][j] == 7 and terrain[i + 1][j + 1] == 7:
-                            line: int = i + 1
-                            column: int = j + 1
-                            return f'{line} {column}'
+    for line in range(1, lines - 1):
+        for column in range(1, columns - 1):
+            if terrain[line][column] == 42:
+                if terrain[line - 1][column - 1] == 7 and terrain[line - 1][column] == 7 and terrain[line - 1][column + 1] == 7:
+                    if terrain[line][column - 1] == 7 and terrain[line][column + 1] == 7:
+                        if terrain[line + 1][column - 1] == 7 and terrain[line + 1][column] == 7 and terrain[line + 1][column + 1] == 7:
+                            result_line: int = line + 1
+                            result_column: int = column + 1
+                            return f'{result_line} {result_column}'
 
     return f'0 0'
 
