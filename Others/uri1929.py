@@ -1,8 +1,6 @@
 def lengths(a, b, c):
-    if abs((b - c)) < a < (b + c):
-        if abs((a - c)) < b < (a + c):
-            if abs((a - b)) < c < (a + b):
-                return True
+    if abs((b - c)) < a < (b + c) and abs((a - c)) < b < (a + c) and abs((a - b)) < c < (a + b):
+        return True
     return False
 
 
@@ -17,4 +15,5 @@ def main():
     print(triangle(a, b, c, d))
 
 
-main()
+if __name__ == '__main__':
+    main()
