@@ -4,7 +4,7 @@ while True:
         one = n // 3
         three = n - 1
 
-        matrix = [[] for num in range(n)]
+        matrix = [[] for _ in range(n)]
 
         for line in range(n):
             for column in range(n):
