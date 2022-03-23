@@ -2,7 +2,7 @@ c = int(input())
 
 
 def bill_challenge(loop):
-    for i in range(loop):
+    for _ in range(loop):
         test_case = int(input())
 
         if test_case % 2 == 0:

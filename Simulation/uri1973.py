@@ -1,7 +1,7 @@
 def star_trek(number_star, number_sheep):
     number_sheep = list(number_sheep)
     total_attacks = sum(number_sheep)
-    attacked_stars = [0 for i in range(number_star)]
+    attacked_stars = [0 for _ in range(number_star)]
     loop = 0
 
     while loop >= 0 and loop < number_star:
