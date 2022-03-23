@@ -11,7 +11,7 @@ def main():
         if T == 0:
             break
 
-        for i in range(T):
+        for _ in range(T):
             test: int = int(input())
             print(the_return_of_radar(test))
 

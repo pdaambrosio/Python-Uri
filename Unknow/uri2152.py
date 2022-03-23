@@ -9,7 +9,7 @@ def main() -> None:
     n: int
     o: int
 
-    for i in range(loop):
+    for _ in range(loop):
         [m, n, o] = map(int, input().split())
         print(already_took_the_candle(m, n, o))
 
