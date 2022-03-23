@@ -1,5 +1,5 @@
 character = input().upper()
-matrix = [[] for num_list in range(12)]
+matrix = [[] for _ in range(12)]
 
 sum_left = 0
 next_column = 11
