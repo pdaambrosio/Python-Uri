@@ -1,6 +1,6 @@
 column = int(input())
 character = input()
-matrix = [[] for num in range(12)]
+matrix = [[] for _ in range(12)]
 
 sum_column = 0
 

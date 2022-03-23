@@ -1,7 +1,7 @@
 qt = int(input())
 
 def who_is_next(number):
-    for i in range(number):
+    for _ in range(number):
         [player1, choice_player1, player2, choice_player2] = input().split()
         [player1_number, player2_number] = map(int, input().split())
 
