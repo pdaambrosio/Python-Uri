@@ -9,7 +9,7 @@ def main():
     loop = int(input())
     costumer_purchased = 0
 
-    for i in range(loop):
+    for _ in range(loop):
         [prod_num, prod_amount] = map(int, input().split())
         costumer_purchased += mac_pronalts(prod_num, prod_amount)
 
