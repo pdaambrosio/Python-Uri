@@ -1,5 +1,5 @@
 def closing_tabs(num_tabs: int, num_actions: int) -> int:
-    for i in range(num_actions):
+    for _ in range(num_actions):
         action: str = input()
         if action == 'fechou':
             num_tabs += 1
