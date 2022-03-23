@@ -5,8 +5,7 @@ def crowstorm_lol(list_args: list) -> str:
 
     if r1 + r2 >= distance + 1.5 * vi:
         return 'Y'
-    else:
-        return 'N'
+    return 'N'
 
 def main() -> None:
     while True:
