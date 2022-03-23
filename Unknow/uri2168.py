@@ -10,7 +10,7 @@ def twilight_at_portland(corners: int, cam: list) -> None:
 
 def main() -> None:
     n: int = int(input())
-    c: list[list[int]] = [list(int(x) for x in input().split()) for i in range(n + 1)]
+    c: list[list[int]] = [list(int(x) for x in input().split()) for _ in range(n + 1)]
     twilight_at_portland(n, c)
 
 
