@@ -5,7 +5,7 @@ def galopeira(word: str) -> str:
 def main() -> None:
     c: int = int(input())
 
-    for i in range(c):
+    for _ in range(c):
         t: str = input()
         print(galopeira(t))
 
