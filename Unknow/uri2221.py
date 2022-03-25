@@ -12,10 +12,11 @@ def pomekons_battle(bonus: int, player1_pokemons_attack: list[int], player2_poke
 
     if player1_attack > player2_attack:
         return 'Dabriel'
-    elif player2_attack > player1_attack:
+
+    if player2_attack > player1_attack:
         return 'Guarte'
-    else:
-        return 'Empate'
+    
+    return 'Empate'
 
 
 def main() -> None:
