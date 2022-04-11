@@ -15,7 +15,7 @@ def which_triangle(a: int, b: int, c: int) -> str:
     else:
         return 'Valido-Escaleno'
 
-#TODO: fix the function is_rectangle (Wrong answer 5%)
+#FIXME: fix the function is_rectangle (Wrong answer 5%)
 def is_rectangle(a: int, b: int, c: int) -> str:
     if (pow(a, 2)) + (pow(b, 2)) == (pow(c, 2)):
         return 'Retangulo: S'
