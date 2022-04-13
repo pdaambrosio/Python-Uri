@@ -82,3 +82,4 @@
 * [Uri2221 - Unknow - Pomekons Battle](https://github.com/pdaambrosio/Python-Uri/blob/main/Unknow/uri2221.py)
 * [Uri2310 - Array - Volleyball](https://github.com/pdaambrosio/Python-Uri/blob/main/Array/uri2310.py)
 * [Uri2311 - Repetition - Diving](https://github.com/pdaambrosio/Python-Uri/blob/main/Repetition/uri2311.py)
+* [Uri2313 - Selection - Which Triangle](https://github.com/pdaambrosio/python_uri/blob/main/Selection/uri2313.py)
