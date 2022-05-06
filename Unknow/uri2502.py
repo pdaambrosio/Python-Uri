@@ -1,4 +1,4 @@
-def deciphering_encrypted_card(loop: int, key_one: str, key_two: str) -> str:
+def desencrypt_card(loop: int, key_one: str, key_two: str) -> str:
     key_one_lower: str = key_one.lower()
     key_two_lower: str = key_two.lower()
     key_one_upper: str = key_one.upper()
@@ -24,12 +24,11 @@ def deciphering_encrypted_card(loop: int, key_one: str, key_two: str) -> str:
 def main() -> None:
     while True:
         try:
-            c: int
-            n: int
-            [c, n] = map(int, input().split())
+            cn: list[int]
+            cn = list(map(int, input().split()))
             k_one = input()
             k_two = input()
-            print(deciphering_encrypted_card(n, k_one, k_two))
+            print(desencrypt_card(cn[1], k_one, k_two))
         except EOFError:
             break
 
