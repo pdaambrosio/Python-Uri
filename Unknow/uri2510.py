@@ -1,6 +1,6 @@
 def batmain(villain: str) -> str:
-    if villain == "Superman":
-        return "Why So Serious?"
+    if villain == 'Superman':
+        return 'Why So Serious?'
     return 'Y'
 
 
