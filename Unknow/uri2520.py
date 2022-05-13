@@ -4,7 +4,7 @@ def city_analogimon(rows: int, columns: int) -> list:
     """
     matrix: list = []
     for _ in range(rows):
-        values = list(map(int, input().split()))
+        values: list[int] = list(map(int, input().split()))
         matrix.append(values)
     return matrix
 
