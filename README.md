@@ -86,4 +86,4 @@
 * [Uri2486 - Unknow -  C Mais ou Menos?](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2486.py)
 * [Uri2493 - Unknow -  Operation Game](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2493.py)
 * [Uri2502 - Unknow -  Deciphering the Encrypted Card](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2502.py)
-
+* [Uri2520 - Unknow -  The Last Analógimôn](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2520.py)
