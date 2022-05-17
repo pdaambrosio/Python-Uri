@@ -1,11 +1,20 @@
 def city_analogimon(rows: int, columns: int) -> list:
-    """
-    Function that returns a list with describing the city Analógimôn
-    """
-    matrix: list = []
-    for _ in range(rows):
-        values: list[int] = list(map(int, input().split()))
-        matrix.append(values)
-    return matrix
+    r1: int = 0
+    r2: int = 0
+    r3: int = 0
+    r4: int = 0
 
-print(city_analogimon(4, 4))
+    for row in rows:
+        for column in columns:
+            pass 
+
+
+def main() -> None:
+    rows: int
+    columns: int
+    [rows, columns ]= map(int, input().split())
+    print(city_analogimon(rows, columns))
+
+
+if __name__ == "__main__":
+    main()
