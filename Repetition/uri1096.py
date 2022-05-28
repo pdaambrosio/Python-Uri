@@ -1,5 +1,5 @@
-value_i = 1
-value_j = 7
+value_i: int = 1
+value_j: int = 7
 
 while value_i <= 9:
     while value_j >= 5:
