@@ -88,3 +88,4 @@
 * [Uri2502 - Unknow -  Deciphering the Encrypted Card](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2502.py)
 * [Uri2520 - Unknow -  The Last Analógimôn](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2520.py)
 * [Uri2523 - Beginner - Will's Message](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2523.py)
+* [Uri2533 - Beginner - Internship](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2533.py)
