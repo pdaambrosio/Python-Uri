@@ -22,7 +22,14 @@ def main() -> None:
             n: int
             q: int
             [n, q] = map(int, input().split())
-            input_queries: list = [x for x in range(n)]
-
+            input_queries: list = [int(input()) for _ in range(n)]
+            sorted_queries: list = sorting_queries(input_queries)
+            for _ in range(q):
+                position: int = int(input())
+                print(grade_citizen(position, sorted_queries))
         except EOFError:
             break
+
+
+if __name__ == "__main__":
+    main()
