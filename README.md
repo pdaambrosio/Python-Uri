@@ -90,3 +90,4 @@
 * [Uri2523 - Beginner - Will's Message](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2523.py)
 * [Uri2533 - Beginner - Internship](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2533.py)
 * [Uri2534 - Sorting - General Exam](https://github.com/pdaambrosio/python_uri/blob/main/Sorting/uri2534.py)
+* [Uri2542 - Matrices - Iu-Di-Oh!](https://github.com/pdaambrosio/python_uri/blob/main/Matrices/uri2534.py)
