@@ -93,3 +93,5 @@
 * [Uri2542 - Matrices - Iu-Di-Oh!](https://github.com/pdaambrosio/python_uri/blob/main/Matrices/uri2542.py)
 * [Uri2544 - Beginner - Kage Bunshin no Jutsu](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2544.py)
 * [Uri2547 - Beginner - Roller Coaster](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2547.py)
+* [Uri2551 - Beginner - New Record](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2551.py)
+
