@@ -1,9 +1,30 @@
-def matrix(n_lines: int, m_columns: int) -> list:
-    matrix: list = [[] for _ in range(n_lines)]
-    
-    for i in range(m_columns):
-        matrix[i].append(input())
-    
-    return matrix
+def cheese_bread_sweeper(n_lines: int, m_columns: int) -> list:
+    matrix: list = []
+    result: list = []
+    count: int = 0
 
-print(matrix(4, 4))
+    for _ in range(m_columns):
+        matrix.append(list(map(int, input().split())))
+
+    for i in range(n_lines):
+        result.append([])
+        for j in range(m_columns):
+            if matrix[i][j] == 1:
+                result[i].append(9)
+            elif i:
+                count += matrix[i - 1][j]
+                result[i].append(count)
+            elif j:
+                count += matrix[i][j - 1]
+                result[i].append(count)
+            elif i != n_lines - 1:
+                count += matrix[i + 1][j]
+                result[i].append(count)
+            elif j != m_columns - 1:
+                count += matrix[i][j + 1]
+                result[i].append(count)
+    
+    return result
+
+
+print(cheese_bread_sweeper(4, 4))

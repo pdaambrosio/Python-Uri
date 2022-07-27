@@ -94,4 +94,4 @@
 * [Uri2544 - Beginner - Kage Bunshin no Jutsu](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2544.py)
 * [Uri2547 - Beginner - Roller Coaster](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2547.py)
 * [Uri2551 - Beginner - New Record](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2551.py)
-
+* [Uri2552 - Matrices - CheeseBreadSweeper](https://github.com/pdaambrosio/python_uri/blob/main/Matrices/uri2552.py)
