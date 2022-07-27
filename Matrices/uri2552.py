@@ -11,18 +11,18 @@ def cheese_bread_sweeper(n_lines: int, m_columns: int) -> list:
         for j in range(m_columns):
             if matrix[i][j] == 1:
                 result[i].append(9)
-            elif i:
-                count += matrix[i - 1][j]
+            elif i > 0 and matrix[i - 1][j] == 1:
                 result[i].append(count)
-            elif j:
-                count += matrix[i][j - 1]
+                count += 1
+            elif i < n_lines - 1 and matrix[i + 1][j] == 1:
                 result[i].append(count)
-            elif i != n_lines - 1:
-                count += matrix[i + 1][j]
+                count += 1
+            elif j > 0 and matrix[i][j - 1] == 1:
                 result[i].append(count)
-            elif j != m_columns - 1:
-                count += matrix[i][j + 1]
+                count += 1
+            elif j < m_columns - 1 and matrix[i][j + 1] == 1:
                 result[i].append(count)
+                
     
     return result
 
