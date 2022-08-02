@@ -31,7 +31,7 @@ def cell_without_cheese_bread(matrix: list, n_lines: int, m_columns) -> list:
 
                 matrix[line][column] = count
                 count = 0
-                
+
     return matrix
 
 
