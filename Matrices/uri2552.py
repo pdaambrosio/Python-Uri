@@ -17,7 +17,6 @@ def cell_without_cheese_bread(matrix: list, n_lines: int, m_columns) -> list:
     for line in range(n_lines):
         for column in range(m_columns):
             if matrix[line][column] != 9:
-
                 if line > 0 and matrix[line - 1][column] == 9:
                     count += 1
 
@@ -32,10 +31,24 @@ def cell_without_cheese_bread(matrix: list, n_lines: int, m_columns) -> list:
 
                 matrix[line][column] = count
                 count = 0
-
+                
     return matrix
 
 
+def main() -> None:
+    while True:
+        try:
+            n: int
+            m: int
+            [n, m] = list(map(int, input().split()))
+            matrix: list = cheese_bread_sweeper(n, m)
+            matrix = cell_without_cheese_bread(matrix, n, m)
+            for line in matrix:
+                print(*line)
+        except EOFError:
+            break
 
-with_cheese_bread: list = cheese_bread_sweeper(4, 4)
-print(cell_without_cheese_bread(with_cheese_bread, 4, 4))
+
+if __name__ == '__main__':
+    main()
+    exit(0)
