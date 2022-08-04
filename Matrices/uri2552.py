@@ -51,3 +51,10 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
+# URI Online Judge (Beecrowd) | 2552: Cheese Bread Sweeper
+# RUNTIME ERROR
+# Traceback (most recent call last):
+# File "/judge/judge-253c995dfb1c42d49fa45ee1e9188b8c.d/Main.py", line 9, in <module>
+# m[i][j]
+# IndexError: list index out of range
