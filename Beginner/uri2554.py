@@ -1,7 +1,16 @@
-def pizza_before_bh(loop: int, date: str, people: list[int]) -> str:
-    if all(loop == 1 for loop in people):
-        return date
-    return 'Pizza antes de FdI'
+def pizza_before_bh(loop: int) -> str:
+    result: str = ''
+    for _ in range(loop):
+        [n_date, d_people] = input().split(' ', 1)
+        d_people = list(map(int, d_people.split()))
+        
+        if all(i == 1 for i in d_people):
+            result = n_date
+            
+        if len(result) == 0:
+            result = 'Pizza antes de FdI'
+
+    return result
 
 
 def main() -> None:
@@ -9,16 +18,8 @@ def main() -> None:
         try:
             n: int
             d: int
-            [n, d] = list(map(int, input().split()))
-            for _ in range(d):
-                [n_date, d_people] = input().split(' ', 1)
-                d_people = list(map(int, d_people.split()))
-                
-                if pizza_before_bh(n, n_date, d_people) == n_date:
-                    print(n_date)
-                    
-                if pizza_before_bh(n, n_date, d_people) == 'Pizza antes de FdI':
-                    print('Pizza antes de FdI')
+            n, d = map(int, input().split())
+            print(pizza_before_bh(d))
         except EOFError:
             break
         
