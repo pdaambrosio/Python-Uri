@@ -18,9 +18,8 @@ def pizza_before_bh(loop: int) -> str:
 def main() -> None:
     while True:
         try:
-            n: int
-            d: int
-            n, d = map(int, input().split())
+            values_input: list[str] = input().split()
+            d: int = int(values_input[1])
             print(pizza_before_bh(d))
         except EOFError:
             break
