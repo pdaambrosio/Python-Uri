@@ -1,6 +1,10 @@
 # Uri Online Judge (beecrowd) - Python
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pdaambrosio_python_uri) &nbsp; &nbsp;[![CodeFactor](https://www.codefactor.io/repository/github/pdaambrosio/python_uri/badge)](https://www.codefactor.io/repository/github/pdaambrosio/python_uri)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pdaambrosio_python_uri)
+[![Code Quality Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=sqale_index)](https://sonarcloud.io/dashboard?id=pdaambrosio_python_uri)
+[![Security Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=security_rating)](https://sonarcloud.io/dashboard?id=pdaambrosio_python_uri)
+[![Duplication Status](https://sonarcloud.io/api/project_badges/measure?project=pdaambrosio_python_uri&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=pdaambrosio_python_uri)
+[![CodeFactor](https://www.codefactor.io/repository/github/pdaambrosio/python_uri/badge)](https://www.codefactor.io/repository/github/pdaambrosio/python_uri)
 
 ## Favorites
 
