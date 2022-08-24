@@ -3,4 +3,11 @@ def hacker_metal_band(num_x: int, num_y: int) -> str:
     return greatest_hits[num_x + num_y]
 
 
-print(hacker_metal_band(int(input()), int(input())))
+def main() -> None:
+    n: int = int(input())
+    for _ in range(n):
+        x, y = map(int, input().split())
+        print(hacker_metal_band(x, y))
+        
+if __name__ == '__main__':
+    main()
