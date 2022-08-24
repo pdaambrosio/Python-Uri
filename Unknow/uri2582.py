@@ -8,6 +8,7 @@ def main() -> None:
     for _ in range(n):
         x, y = map(int, input().split())
         print(hacker_metal_band(x, y))
-        
+
+
 if __name__ == '__main__':
     main()
