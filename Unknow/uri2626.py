@@ -24,3 +24,19 @@ def rock_paper_scissors(player1: str, player2: str, player3: str) -> str:
         return pepper
     else:
         return a_tie
+    
+
+def main() -> None:
+    while True:
+        try:
+            input_dodo: str
+            input_leo: str
+            input_pepper: str
+            [input_dodo, input_leo, input_pepper] = input().split()
+            print(rock_paper_scissors(input_dodo, input_leo, input_pepper))
+        except EOFError:
+            break
+    
+
+if __name__ == '__main__':
+    main()
