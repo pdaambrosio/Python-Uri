@@ -6,24 +6,24 @@ def rock_paper_scissors(player1: str, player2: str, player3: str) -> str:
     
     if player1 == 'papel' and player2 == 'papel' and player3 == 'tesoura':
         return pepper
-    elif player1 == 'papel' and player2 == 'pedra' and player3 == 'pedra':
+    if player1 == 'papel' and player2 == 'pedra' and player3 == 'pedra':
         return dodo
-    elif player1 == 'papel' and player2 == 'tesoura' and player3 == 'papel':
+    if player1 == 'papel' and player2 == 'tesoura' and player3 == 'papel':
         return leo
-    elif player1 == 'pedra' and player2 == 'papel' and player3 == 'pedra':
+    if player1 == 'pedra' and player2 == 'papel' and player3 == 'pedra':
         return leo
-    elif player1 == 'pedra' and player2 == 'pedra' and player3 == 'papel':
+    if player1 == 'pedra' and player2 == 'pedra' and player3 == 'papel':
         return pepper
-    elif player1 == 'pedra' and player2 == 'tesoura' and player3 == 'tesoura':
+    if player1 == 'pedra' and player2 == 'tesoura' and player3 == 'tesoura':
         return dodo
-    elif player1 == 'tesoura' and player2 == 'papel' and player3 == 'papel':
+    if player1 == 'tesoura' and player2 == 'papel' and player3 == 'papel':
         return dodo
-    elif player1 == 'tesoura' and player2 == 'pedra' and player3 == 'tesoura':
+    if player1 == 'tesoura' and player2 == 'pedra' and player3 == 'tesoura':
         return leo
-    elif player1 == 'tesoura' and player2 == 'tesoura' and player3 == 'pedra':
+    if player1 == 'tesoura' and player2 == 'tesoura' and player3 == 'pedra':
         return pepper
-    else:
-        return a_tie
+
+    return a_tie
     
 
 def main() -> None:
