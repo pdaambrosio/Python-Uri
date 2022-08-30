@@ -3,37 +3,39 @@ def rock_paper_scissors(player1: str, player2: str, player3: str) -> str:
     leo: str = "Iron Maiden's gonna get you, no matter how far!"
     pepper: str = "Urano perdeu algo muito precioso..."
     a_tie: str = "Putz vei, o Leo ta demorando muito pra jogar..."
-    states: list[str] = ['Rock','Paper','Scissors']
     
-    if player2 == 'pedra' and player3 == 'pedra':
-        if player1 == 'papel':
-            return dodo
-    if player2 == 'tesoura' and player3 == 'tesoura':
-        if player1 == 'pedra':
-            return dodo
-    if player2 == 'papel' and player3 == 'papel':
-        if player1 == 'tesoura':
-            return dodo
-    
-    if player1 == 'papel' and player2 == 'papel':
-        if player3 == 'tesoura':
-            return pepper
-    if player1 == 'pedra' and player2 == 'pedra':
-        if player3 == 'papel':
-            return pepper
-    if player1 == 'tesoura' and player2 == 'tesoura':
-        if player3 == 'pedra':
-            return pepper
-
-    if player1 == 'papel' and player3 == 'papel':
-        if player2 == 'tesoura':
-            return leo
-    if player1 == 'pedra' and player3 == 'pedra':
-        if player2 == 'papel':
-            return leo
-    if player1 == 'tesoura' and player3 == 'tesoura':
-        if player2 == 'pedra':
-            return leo
+    match player1:
+        case 'papel':
+            if player2 == 'pedra' and player3 == 'pedra':
+                return dodo
+        case 'pedra':
+            if player2 == 'tesoura' and player3 == 'tesoura':
+                return dodo
+        case 'tesoura':
+            if player2 == 'papel' and player3 == 'papel':
+                return dodo
+            
+    match player2:
+        case 'papel':
+            if player1 == 'pedra' and player3 == 'pedra':
+                return leo
+        case 'pedra':
+            if player1 == 'tesoura' and player3 == 'tesoura':
+                return leo
+        case 'tesoura':
+            if player1 == 'papel' and player3 == 'papel':
+                return leo
+            
+    match player3:
+        case 'papel':
+            if player1 == 'pedra' and player2 == 'pedra':
+                return pepper
+        case 'pedra':
+            if player1 == 'tesoura' and player2 == 'tesoura':
+                return pepper
+        case 'tesoura':
+            if player1 == 'papel' and player2 == 'papel':
+                return pepper
 
     return a_tie
     
