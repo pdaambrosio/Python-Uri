@@ -3,7 +3,7 @@ def rock_paper_scissors(player1: str, player2: str, player3: str) -> str:
     leo: str = "Iron Maiden's gonna get you, no matter how far!"
     pepper: str = "Urano perdeu algo muito precioso..."
     a_tie: str = "Putz vei, o Leo ta demorando muito pra jogar..."
-    
+
     match player1:
         case 'papel':
             if player2 == 'pedra' and player3 == 'pedra':
@@ -38,7 +38,7 @@ def rock_paper_scissors(player1: str, player2: str, player3: str) -> str:
                 return pepper
 
     return a_tie
-    
+
 
 def main() -> None:
     while True:
@@ -50,7 +50,7 @@ def main() -> None:
             print(rock_paper_scissors(input_dodo, input_leo, input_pepper))
         except EOFError:
             break
-    
+
 
 if __name__ == '__main__':
     main()
