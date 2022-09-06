@@ -101,3 +101,4 @@
 * [Uri2552 - Matrices - CheeseBreadSweeper](https://github.com/pdaambrosio/python_uri/blob/main/Matrices/uri2552.py)
 * [Uri2554 - Beginner - Pizza Before BH](https://github.com/pdaambrosio/python_uri/blob/main/Beginner/uri2554.py)
 * [Uri2626 - Unknow -  JB6 Team](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2626.py)
+* [Uri2626 - Unknow -  Greyscale](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2630.py)
