@@ -21,7 +21,7 @@ def main() -> None:
         input_b: int
         [input_r, input_g, input_b] = map(int, input().split())
         case_result: int = greyscale(input_conversion, input_r, input_g, input_b)
-        print(f'Caso #{i+1} {case_result}')
+        print(f'Caso #{i+1}: {case_result}')
 
 
 if __name__ == '__main__':
