@@ -11,29 +11,29 @@ def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y
     spell_type: dict = spells[spell]
     spell_damage: int = spell_type['dmg']
     spell_n: int = spell_type[f'l{spell_level}']
-    range: bool = True
+    zone: bool = True
     
     if coordinate_x0 <= coordinate_cx <= coordinate_x0 + width_w and coordinate_y0 <= coordinate_cy <= coordinate_y0 + height_h:
-        range = False
+        zone = False
     
-    if range:
+    if zone:
         c1: int = (coordinate_x0 - coordinate_cx) ** 2
         c2: int = (coordinate_y0 + height_h - coordinate_cy) ** 2
         for i in range(coordinate_x0, coordinate_x0 + width_w + 1):  # type: ignore
             d1 = sqrt((i - coordinate_cx) ** 2 + c1)
             d2 = sqrt((i - coordinate_cx) ** 2 + c2)
             if spell_n >= d1 or spell_n >= d2:
-                range = False
+                zone = False
                 break
             
-    if range:
+    if zone:
         c1: int = (coordinate_y0 - coordinate_cy) ** 2
         c2: int = (coordinate_x0 + width_w - coordinate_cx) ** 2
         for i in range(coordinate_y0, coordinate_y0 + height_h + 1):  # type: ignore
             d1: float = sqrt(c1 + (i - coordinate_cy) ** 2)
             d2: float = sqrt(c2 + (i - coordinate_cy) ** 2)
             if spell_n >= d1 or spell_n >= d2:
-                range = False
+                zone = False
                 break
     
     return spell_damage if not range else 0
