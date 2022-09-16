@@ -16,10 +16,7 @@ def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y
     distance_x0_w: int = coordinate_x0 + width_w
     distance_y0_h: int = coordinate_y0 + height_h
     
-    if coordinate_x0 <= coordinate_cx <= distance_x0_w:
-        zone = False
-        
-    if coordinate_y0 <= coordinate_cy <= distance_y0_h:
+    if coordinate_x0 <= coordinate_cx <= distance_x0_w and coordinate_y0 <= coordinate_cy <= distance_y0_h:
         zone = False
     
     if zone:
