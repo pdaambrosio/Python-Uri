@@ -1,6 +1,3 @@
-from turtle import distance
-
-
 def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y0: int, spell: str, spell_level: int, coordinate_cx: int, coordinate_cy: int) -> int:
     from math import sqrt
     
