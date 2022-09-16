@@ -1,3 +1,6 @@
+from turtle import distance
+
+
 def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y0: int, spell: str, spell_level: int, coordinate_cx: int, coordinate_cy: int) -> int:
     from math import sqrt
     
@@ -13,13 +16,19 @@ def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y
     spell_n: int = spell_type[f'l{spell_level}']
     zone: bool = True
     
-    if coordinate_x0 <= coordinate_cx <= coordinate_x0 + width_w and coordinate_y0 <= coordinate_cy <= coordinate_y0 + height_h:
+    distance_x0_w: int = coordinate_x0 + width_w
+    distance_y0_h: int = coordinate_y0 + height_h
+    
+    if coordinate_x0 <= coordinate_cx <= distance_x0_w:
+        zone = False
+        
+    if coordinate_y0 <= coordinate_cy <= distance_y0_h:
         zone = False
     
     if zone:
         c1: int = (coordinate_y0 - coordinate_cy) ** 2
-        c2: int = (coordinate_y0 + height_h - coordinate_cy) ** 2
-        for i in range(coordinate_x0, coordinate_x0 + width_w + 1):  # type: ignore
+        c2: int = (distance_y0_h - coordinate_cy) ** 2
+        for i in range(coordinate_x0, distance_x0_w + 1):  # type: ignore
             d1 = sqrt((i - coordinate_cx) ** 2 + c1)
             d2 = sqrt((i - coordinate_cx) ** 2 + c2)
             if spell_n >= d1 or spell_n >= d2:
@@ -28,8 +37,8 @@ def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y
     
     if zone:
         c1: int = (coordinate_x0 - coordinate_cx) ** 2
-        c2: int = (coordinate_x0 + width_w - coordinate_cx) ** 2
-        for i in range(coordinate_y0, coordinate_y0 + height_h + 1):  # type: ignore
+        c2: int = (distance_x0_w - coordinate_cx) ** 2
+        for i in range(coordinate_y0, distance_y0_h + 1):  # type: ignore
             d1: float = sqrt(c1 + (i - coordinate_cy) ** 2)
             d2: float = sqrt(c2 + (i - coordinate_cy) ** 2)
             if spell_n >= d1 or spell_n >= d2:
@@ -42,14 +51,8 @@ def magic_and_sword(width_w: int, height_h:int, coordinate_x0: int, coordinate_y
 def main() -> None:
     
     loop: int = int(input())
-    w: int
-    h: int
-    x0: int
-    y0: int
-    spell: str
-    n: int
-    cx: int
-    cy: int
+    w: int; h: int; x0: int; y0: int
+    spell: str; n: int; cx: int; cy: int
     
     for _ in range(loop):
         [w, h, x0, y0] = map(int, input().split())
