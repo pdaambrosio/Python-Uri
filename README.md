@@ -103,3 +103,4 @@
 * [Uri2626 - Unknow -  JB6 Team](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2626.py)
 * [Uri2630 - Unknow -  Greyscale](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2630.py)
 * [Uri2632 - Unknow -  Magic and Sword](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2632.py)
+* [Uri2635 - Unknow -  Web Browser](https://github.com/pdaambrosio/python_uri/blob/main/Unknow/uri2635.py)
