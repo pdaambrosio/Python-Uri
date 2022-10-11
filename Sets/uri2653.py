@@ -1,11 +1,9 @@
-from itertools import count
-
-
 def types_jewelry(jewelrys: list[str]) -> int:
     return len(set(jewelrys))
 
 
 def main() -> None:
+    from itertools import count
     jewelrys = []
     for _ in count():
         try:
