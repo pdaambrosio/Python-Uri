@@ -1,8 +1,9 @@
 def fase(n_competitor: int, k_approved: int, participants: list[int]) -> int:
-    count: int = 0
+    count: int = k_approved
+    participants.sort(reverse=True)
     for i in range(n_competitor):
-        if participants[k_approved] == participants[i - 1]:
-                    count += 1
+        if participants[count] == participants[k_approved - 1]:
+            count += 1
     return count
 
 
